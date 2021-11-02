@@ -1,0 +1,128 @@
+/* メモ　クリップ　Ａ */
+.clip-box-a {
+ position: relative;
+ margin: 2em auto;
+ padding: 15px 35px 15px 25px;
+ width: 90%; /* ボックス幅 */
+ background-color: #fff; /* ボックス背景色 */
+ color: #555555; /* 文章色 */
+ border: 1px solid #ccc; /* 枠線 */
+ box-shadow: 1px 1px 1px #acacac; /* 影の色 */
+}
+.clip-box-a::before {
+ position: absolute;
+ content: '';
+ top: -15px;
+ right: 10px;
+ height: 55px;
+ width: 15px;
+ border: 3px solid #555555; /*クリップ色 */
+ background-color: none;
+ border-radius: 12px;
+ box-shadow: 1px 1px 2px #999;
+ transform: rotate(10deg);
+ z-index: 1;
+}
+.clip-box-a::after {
+ position: absolute;
+ content: '';
+ top: 0px;
+ width: 10px;
+ right: 20px;
+ border: solid 5px #fff; /*背景色と同じ色にする*/
+ z-index: 2;
+}
+
+.mainbox {
+  padding: 1em 1.5em;
+    margin: 2em 0;
+    background-color:#f6faee;/*背景色*/
+    border-left: solid 10px #6b8e23;/*左ライン*/
+    color:#000000;/*文字色*/
+}
+.mainbox p {
+    margin: 0;
+    padding: 0;
+}
+
+.sample_box12 {
+   width: 260px;/* 紙の横幅 100%にすると全幅表示に */
+   padding: 15px;
+   margin: 2em auto;
+   background: #fbc7f5;/* 紙の色 */
+   color: #000;/* 文字色 */
+   box-shadow: 4px 4px 4px rgba(0,0,0,0.03);transform:rotate(2deg);
+   word-break: break-all;
+}
+.sample_box12 p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+.sample_box12_tape {
+    width: 50%;
+    height: 35px;
+    margin: -25px auto 0;
+    background: rgba(251, 234, 144, 0.5);/* テープの色 */
+    transform: rotate(-3deg);
+    opacity: 0.9;
+}
+.sample_box12_title {
+    text-align: center;
+    font-size: 1.3em!important;
+    margin-top: 10px!important;
+}
+.sample_box12_subtitle {
+    text-align: center;
+    font-size: 0.7em!important;
+    margin-bottom: 1em!important;
+}
+
+.container {
+  background: #fff;
+  padding: 24% 30px 10px;
+  overflow: hidden;
+  position: relative;
+}
+h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 16vw;
+  text-transform: uppercase;
+  color: #000;
+  position: absolute;
+  top: -20vw;
+  left: -1vw;
+  white-space: nowrap;
+}
+
+.sample_box10 {
+    padding: 1em 1.5em;
+    margin: 2em 0;
+    background: linear-gradient(to bottom, #ffffff, #eeeeee);/*背景色*/
+    background: -webkit-linear-gradient(top, #fffff, #eeeeee);/*背景色*/
+    border: 1px solid #eeeeee;/*枠線*/
+    border-top: 4px solid #00008b;/*上の線*/
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 1) inset;
+    color:#000000;/*文字色*/
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+.sample_box10 p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8em;
+    font-family: 'Kosugi Maru', sans-serif;
+    }
+}
+.sample_box3 {
+    padding: 1em 1.5em;
+    margin: 2em 0;
+    background-color:#b0e0e6;/*背景色*/
+    color:#000000;/*文字色*/
+}
+.sample_box3 p {
+    margin: 0;
+    padding: 0;
+}
